@@ -1,0 +1,72 @@
+body {
+    color: #8C31DC;
+}
+
+/* CHANGE MODE */
+
+#change-mode {
+    font-size: 2.5rem;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+#change-mode a {
+    color: #8C31DC;
+}
+
+/* CLOCK */
+
+@font-face {
+    font-family: digital-numbers;
+    src: url(../LiquidCrystal-Light.otf);
+}
+
+#clock {
+    font-family: digital-numbers;
+    font-size: 130px;
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: 10px;
+    background: linear-gradient(to right, #0047ff 40%, #ff00b8 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.clock-link:hover {
+    text-decoration: none;
+}
+
+/* BUTTONS */
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #8C31DC;
+    border: solid;
+    margin-bottom: 30px;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+
+.buttons a {
+    color: #8C31DC;
+}
+
+.btn:hover {
+    background-color: #8C31DC;
+    border-color: #8C31DC;
+}
+
+.btn:hover > a {
+    color: #FFF;
+}
+
+.buttons a:hover {
+    color: #FFF;
+    text-decoration: none;
+}

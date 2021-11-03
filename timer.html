@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--ROBOTO FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/timer.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2e99a12d0d.js" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="js/timer.js"></script>
+</head>
+
+<body>
+    <div id="change-mode"><a href="#"><i class="fas fa-adjust"></i></a></div>
+
+    <!-- CLOCK -->
+    <a class="clock-link" href="home.html"><div id="clock"></div></a>
+
+    <!-- MENU -->
+    <div class="btns">
+        <div class="btn"><a href="alarm.html">ALARM</a></div>
+        <div class="btn timer"><a href="timer.html">TIMER</a></div>
+        <div class="btn"><a href="stopwatch.html">STOPWATCH</a></div>
+    </div>
+
+    <!-- TIMER -->
+    <section class="ct">
+        <div class="countdown">
+            <div class="container-hour">
+                <div class="label">hours</div>
+                <input type="number" id="hour" name="hour" value="00" min="0" max="99">
+            </div>
+            <div class="container-minute">
+                <div class="label min">minutes</div>
+                <input type="number" id="minute" name="minute" value="00" min="0" max="99">
+            </div>
+            <div class="container-second">
+                <div class="label">seconds</div>
+                <input type="number" id="second" name="second" value="00" min="0" max="99">
+            </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+            <button id="startStop" onclick="startStop()">start</button>
+            <button id="reset" onclick="reset()">reset</button>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
