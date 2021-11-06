@@ -33,7 +33,9 @@
     <div id="change-mode"><a href="#"><i class="fas fa-adjust"></i></a></div>
 
     <!-- CLOCK -->
-    <a class="clock-link" href="home.html"><div id="clock"></div></a>
+    <a class="clock-link" href="home.html">
+        <div id="clock"></div>
+    </a>
 
     <!-- MENU -->
     <div class="btns">
@@ -42,22 +44,23 @@
         <div class="btn sw"><a href="stopwatch.html">STOPWATCH</a></div>
     </div>
 
-    <!-- LABELS -->
-    <div class="labels">
-        <p>hours</p>
-        <p id="min">minutes</p>
-        <p>seconds</p>
-    </div>
-
     <!-- STOPWATCH -->
-    <div class="container">
+    <section class="stopw">
 
-        <div id="display">
-            00&nbsp;&nbsp;&nbsp;&nbsp;
-            :&nbsp;&nbsp;&nbsp;&nbsp;
-            00&nbsp;&nbsp;&nbsp;&nbsp;
-            :&nbsp;&nbsp;&nbsp;&nbsp;
-            00
+        <div class="stopwatch">
+            <div class="container-hour">
+                <div class="label">hours</div>
+                <div id="hour">00</div>
+            </div>
+            <div class="container-minute">
+                <div class="label min">minutes</div>
+                <div id="minute">00</div>
+            </div>
+            <div class="container-second">
+                <div class="label">seconds</div>
+                <div id="second">00</div>
+            </div>
+            
         </div>
 
         <!-- BUTTONS -->
@@ -66,7 +69,7 @@
             <button id="reset" onclick="reset()">reset</button>
         </div>
 
-    </div>
+    </section>
 
 
 </body>

@@ -64,16 +64,10 @@ body {
 }
 
 .btn:hover {
-    background-color: #8C31DC;
     border-color: #8C31DC;
 }
 
-.btn:hover > a {
-    color: #FFF;
-}
-
 .buttons a:hover {
-    color: #FFF;
     text-decoration: none;
 }
 

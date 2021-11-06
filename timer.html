@@ -33,7 +33,9 @@
     <div id="change-mode"><a href="#"><i class="fas fa-adjust"></i></a></div>
 
     <!-- CLOCK -->
-    <a class="clock-link" href="home.html"><div id="clock"></div></a>
+    <a class="clock-link" href="home.html">
+        <div id="clock"></div>
+    </a>
 
     <!-- MENU -->
     <div class="btns">
@@ -51,14 +53,16 @@
             </div>
             <div class="container-minute">
                 <div class="label min">minutes</div>
-                <input type="number" id="minute" name="minute" value="00" min="0" max="99">
+                <input type="number" id="minute" name="minute" value="00" min="0" max="59">
             </div>
             <div class="container-second">
                 <div class="label">seconds</div>
-                <input type="number" id="second" name="second" value="00" min="0" max="99">
+                <input type="number" id="second" name="second" value="00" min="0" max="59">
             </div>
 
         </div>
+
+        <div id="message"></div>
 
         <!-- BUTTONS -->
         <div class="buttons">

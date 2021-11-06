@@ -64,16 +64,10 @@ body {
 }
 
 .btn:hover {
-    background-color: #8C31DC;
     border-color: #8C31DC;
 }
 
-.btn:hover > a {
-    color: #FFF;
-}
-
 .btns a:hover {
-    color: #FFF;
     text-decoration: none;
 }
 
@@ -87,28 +81,41 @@ body {
 
 /* LABELS */
 
-.labels {
+.label {
+    font-size: 20px;
+    color: #414141;
+    font-family: Questrial, sans-serif;
+}
+
+.min {
+    margin: 0 40px;
+}
+
+/* SET TIME */
+
+.stopw {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     margin-top: 60px;
-    color: #414141;
-    font-size: 20px;
-    font-family: Questrial, sans-serif;
 }
-
-#min {
-    margin: 0 35px;
-}
-
-/* STOPWATCH */
-
-#display{
-    font-size: 28px;
+  
+.stopwatch {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
-    margin: 0px auto;
+}
+
+#hour,
+#minute,
+#second {
+    font-size: 28px;
     color: #414141;
+    width: 40px;
+    border: none;
     font-family: Questrial, sans-serif;
+    margin: 0 auto;
 }
 
 /* BUTTON */
