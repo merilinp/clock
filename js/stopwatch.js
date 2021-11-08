@@ -109,5 +109,5 @@ function reset() {
     document.getElementById("minute").innerHTML = "00";
     document.getElementById("second").innerHTML = "00";
     document.getElementById("startStop").innerHTML = "start";
-
+    staatus = "stopped";
 }

@@ -103,10 +103,13 @@ function startStop() {
         else {
             //ERROR 
             alert("Something went wrong! Check the entered numbers.");
+            
         }
 
         document.getElementById("startStop").innerHTML = "stop";
         staatus = "started";
+
+        
 
     }
     else {
